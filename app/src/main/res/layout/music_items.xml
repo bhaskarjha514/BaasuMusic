@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/audio_item"
+    android:layout_width="match_parent"
+    android:background="#111112"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/music_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="2dp"
+        />
+    <TextView
+        android:id="@+id/music_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Name"
+        android:layout_toEndOf="@+id/music_img"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/menu_more"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/music_img"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/menu_more" />
+
+    <ImageView
+        android:id="@+id/menu_more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="2dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_vertical_more"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp" />
+
+
+</RelativeLayout>
